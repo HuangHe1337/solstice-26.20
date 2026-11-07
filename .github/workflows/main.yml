@@ -1,5 +1,11 @@
 name: CMake Windows Build
 
+on:
+  push:
+    branches: [ "main", "master", "release" ]
+  pull_request:
+    branches: [ "main", "master", "release" ]
+
 env:
   BUILD_TYPE: Release
 
